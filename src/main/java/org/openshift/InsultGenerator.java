@@ -38,7 +38,7 @@ public class InsultGenerator
 				connection.close();
 			}
 		} catch (Exception e) {
-			return "Database connection problem! " + e.message;
+			return e.getMessage();
 		}
 		return theInsult;
 	}
